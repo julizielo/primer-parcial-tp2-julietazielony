@@ -1,5 +1,5 @@
 import express from 'express'
-import RouterNumeros from './router/numeros.js'
+import RouterNotas from './router/notas.js'
 
 const app = express()
 app.use(express.json())
@@ -10,7 +10,7 @@ app.use(express.static('public'))
 // -----------------------------------------------
 //         API RESTful : Productos
 // -----------------------------------------------
-app.use('/api/numeros', new RouterNumeros().start())
+app.use('/api/notas', new RouterNotas().start())
 
 // -----------------------------------------------
 //        LISTEN DEL SERVIDOR EXPRESS
